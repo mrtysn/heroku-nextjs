@@ -3,13 +3,10 @@
   "version": "1.0.0",
   "description": "Deploy Next.js server-side React apps to Heroku",
   "scripts": {
-    "dev": "next",
+    "dev": "node server.js",
     "build": "next build",
-    "start": "next start -p $PORT",
+    "start": "NODE_ENV=production node server.js",
     "heroku-postbuild": "npm run build"
-  },
-  "engines": {
-    "node": "6.11.x"
   },
   "repository": {
     "type": "git",
@@ -27,8 +24,10 @@
   },
   "homepage": "https://github.com/mars/heroku-nextjs#readme",
   "dependencies": {
-    "next": "^4.0.3",
+    "express": "^4.16.2",
+    "next": "^4.1.0",
     "react": "^16.0.0",
-    "react-dom": "^16.0.0"
+    "react-dom": "^16.0.0",
+    "semantic-ui-react": "^0.75.0"
   }
 }
