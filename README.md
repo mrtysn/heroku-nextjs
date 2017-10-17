@@ -1,3 +1,7 @@
+#  Semantic UI <Responsive/> SSR BUG: 'window is not defined'
+
+This repo was forked as a starting point, and updated as necessary in order to demonstrate a potential bug in SUI, when SSR is used.
+
 #  [Next.js](https://zeit.co/blog/next2) on Heroku
 
 Deploy [React](https://facebook.github.io/react/)-based universal web apps on [Heroku](https://www.heroku.com/home).
